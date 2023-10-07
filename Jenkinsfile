@@ -13,7 +13,7 @@ pipeline{
 
         stage('Instalar dependencias'){
             steps{
-                dir('C:\repositorio.it\devops_jenkins-ci'){
+                dir('/repositorio.it/devops_jenkins-ci'){
                     bat "node -v"
                     bat 'npm install'
                 }
