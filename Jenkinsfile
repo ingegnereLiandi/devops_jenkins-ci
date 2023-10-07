@@ -13,14 +13,14 @@ pipeline{
 
         stage('Instalar dependencias'){
             steps{
-                bat "node -v"
-                bat 'npm install'
+                sh "node -v"
+                sh 'npm install'
                 }
         }
         
        stage('Executar Testes') {
             steps {             
-                   bat 'npx run cy:run'
+                   sh 'npx run cy:run'
                 }
             }
         }
