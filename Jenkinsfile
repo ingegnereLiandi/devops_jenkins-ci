@@ -13,7 +13,7 @@ pipeline{
 
         stage('Instalar dependencias'){
             steps{
-                sh "node -v"
+                bat "node -v"
                 sh 'npm install'
                 }
         }
