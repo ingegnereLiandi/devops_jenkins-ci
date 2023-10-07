@@ -14,15 +14,14 @@ pipeline{
         stage('Instalar dependencias'){
             steps{
                 dir(' C:/repositorio.it/devops_jenkins-ci')
-                bat "node -v"
-                bat 'npm install'
+                    bat "node -v"
+                    bat 'npm install'
                 }
         }
         
        stage('Executar Testes') {
             steps {       
-                      
-                   bat 'npx run cy:run'
+                bat 'npx run cy:run'
                 }
             }
         }
