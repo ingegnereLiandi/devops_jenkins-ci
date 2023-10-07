@@ -19,8 +19,9 @@ pipeline{
         }
         
        stage('Executar Testes') {
-            steps {             
-                   sh 'npx run cy:run'
+            steps {       
+                dir(' C:\repositorio.it\devops_jenkins-ci')      
+                   bat 'npx run cy:run'
                 }
             }
         }
