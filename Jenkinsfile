@@ -23,6 +23,7 @@ pipeline{
             steps {      
                 dir('repositorio.it/devops_jenkins-ci'){ 
                     bat 'npx run cy:run'
+ 
                     
                    }
                 }
