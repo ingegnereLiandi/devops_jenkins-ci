@@ -5,6 +5,8 @@ module.exports = defineConfig({
 
     baseUrl:"http://lojaebac.ebaconline.art.br/",
     projectId: "eousma",
+    integrationFolder: "cypress/e2e",
+    
 
     setupNodeEvents(on, config) {
       
