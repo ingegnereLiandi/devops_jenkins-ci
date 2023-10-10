@@ -17,16 +17,15 @@ pipeline{
                 bat 'npm install'    
             }
         }
-        /*
+    
        stage('Executar Testes') {
             steps {      
                 dir('repositorio.it/devops_jenkins-ci'){ 
                     bat 'npx cypress run'
-                    
-                    
+                     
                    }
-                }*/
+                }
             }
         }
-    //}
+    }
 
