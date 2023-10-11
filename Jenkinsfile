@@ -19,7 +19,8 @@ pipeline{
         }
     
        stage('Executar Testes') {
-            steps {      
+            steps { 
+                bat 'npx cypress run --config-file devops_jenkins-ci/cypress/cypress.config.js'     
                 dir('repositorio.it/devops_jenkins-ci'){ 
                     bat 'npx cypress run'
                      
