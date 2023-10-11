@@ -1,7 +1,7 @@
 pipeline{
     agent any
     environment {
-        CYPRESS_CONFIG_FILE = '\repositorio.it\devops_jenkins-ci\cypress\cypress.config.js'
+        CYPRESS_CONFIG_FILE = '/repositorio.it/devops_jenkins-ci/cypress/cypress.config.js'
     }
     tools{
         nodejs "node 16.17.0"
