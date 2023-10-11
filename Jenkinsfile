@@ -1,5 +1,8 @@
 pipeline{
     agent any
+    environment {
+        CYPRESS_CONFIG_FILE = 'devops_jenkins-ci/cypress/cypress.config.js'
+    }
     tools{
         nodejs "node 16.17.0"
     }
@@ -20,7 +23,7 @@ pipeline{
     
        stage('Executar Testes') {
             steps { 
-                bat 'npx cypress run --config-file devops_jenkins-ci/cypress/cypress.config.js'     
+                
                 dir('repositorio.it/devops_jenkins-ci'){ 
                     bat 'npx cypress run'
                      
