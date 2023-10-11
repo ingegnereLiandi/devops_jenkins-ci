@@ -24,7 +24,7 @@ pipeline{
        stage('Executar Testes') {
             steps { 
                 
-                dir('repositorio.it/devops_jenkins-ci'){ 
+                dir('C:\ProgramData\Jenkins\.jenkins\workspace\ebac_jenkins_ci\repositorio.it\devops_jenkins-ci'){ 
                     bat 'npx cypress run'
                      
                    }
