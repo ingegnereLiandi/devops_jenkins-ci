@@ -25,6 +25,7 @@ pipeline{
             steps { 
                 
                 dir('repositorio.it/devops_jenkins-ci'){ 
+                    bat "npx cypress run --config-file $CYPRESS_CONFIG_FILE"
                     bat 'npx cypress run'
                      
                    }
